@@ -323,8 +323,53 @@ label{font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--m
 
 /* ── Responsive ── */
 @media(max-width:720px){
-  .cards{grid-template-columns:1fr}
-  .hd{flex-direction:column;align-items:flex-start}
+  html{font-size:14px}
+
+  .shell{padding:1.1rem 1rem 4rem}
+
+  /* Header */
+  .hd{flex-direction:column;align-items:stretch;gap:.75rem}
+  .hd-l{gap:.6rem}
+  .logo{width:32px;height:32px;font-size:.9rem;flex-shrink:0}
+  .app-label{font-size:.55rem}
+  .bname-text{font-size:1rem}
+  .bname-input{font-size:1rem;width:100%}
+  .hd-r{
+    display:grid!important;
+    grid-template-columns:1fr 1fr;
+    gap:.45rem;
+  }
+  .hd-r .btn{justify-content:center;font-size:.72rem;padding:.5rem .6rem}
+  .hd-r .gold-btn{grid-column:1/-1;padding:.6rem}
+
+  /* Budget dropdown */
+  .bdrop{min-width:100%;left:0}
+
+  /* Cards */
+  .cards{flex-direction:column;gap:.65rem;margin-bottom:1rem}
+  .card{padding:1rem 1.1rem}
+  .cval{font-size:1.6rem}
+
+  /* Toolbar */
+  .tb{flex-direction:column;align-items:stretch;gap:.5rem}
+  .tb-l{flex-wrap:wrap;gap:.45rem}
+  .sw{flex:unset;width:100%}
+  .sw input{width:100%}
+  .fsel{flex:1;min-width:0}
+  .rcount{display:none}
+
+  /* Table — horizontal scroll */
+  .twrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:12px}
+  table{min-width:480px}
+  thead th{font-size:.55rem;padding:.5rem .7rem}
+  td{font-size:.75rem;padding:.6rem .7rem}
+  .nc{max-width:110px}
+  .tn{font-size:.72rem}
+
+  /* Modal */
+  .modal{padding:1.25rem;border-radius:16px;margin:1rem}
+  .fgrid{grid-template-columns:1fr}
+  .fg.full{grid-column:1}
 }
 
 /* ── Print ── */
